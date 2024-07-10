@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_new_account.xml"
+    app:startDestination="@id/splashNewAccountFragment">
+
+
+    <fragment
+        android:id="@+id/splashNewAccountFragment"
+        android:name="com.example.try2.SplashNewAccountFragment"
+        android:label="fragment_splash_new_account"
+        tools:layout="@layout/fragment_splash_new_account" >
+        <action
+            android:id="@+id/action_splashNewAccountFragment_to_nameNewAccountFragment"
+            app:destination="@id/nameNewAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nameNewAccountFragment"
+        android:name="com.example.try2.NameNewAccountFragment"
+        android:label="fragment_name_new_account"
+        tools:layout="@layout/fragment_name_new_account" >
+        <action
+            android:id="@+id/action_nameNewAccountFragment_to_numberNewAccountFragment"
+            app:destination="@id/numberNewAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/numberNewAccountFragment"
+        android:name="com.example.try2.NumberNewAccountFragment"
+        android:label="fragment_number_new_account"
+        tools:layout="@layout/fragment_number_new_account" >
+        <action
+            android:id="@+id/action_numberNewAccountFragment_to_otpNewAccountFragment"
+            app:destination="@id/otpNewAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpNewAccountFragment"
+        android:name="com.example.try2.OtpNewAccountFragment"
+        android:label="fragment_otp_new_account"
+        tools:layout="@layout/fragment_otp_new_account" >
+        <action
+            android:id="@+id/action_otpNewAccountFragment_to_numberNewAccountFragment"
+            app:destination="@id/numberNewAccountFragment" />
+        <action
+            android:id="@+id/action_otpNewAccountFragment_to_usernameNewAccountFragment"
+            app:destination="@id/usernameNewAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/usernameNewAccountFragment"
+        android:name="com.example.try2.UsernameNewAccountFragment"
+        android:label="fragment_username_new_account"
+        tools:layout="@layout/fragment_username_new_account" >
+        <action
+            android:id="@+id/action_usernameNewAccountFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.try2.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
