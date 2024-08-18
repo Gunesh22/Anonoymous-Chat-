@@ -1,12 +1,9 @@
 package com.example.try2
 
-import android.annotation.SuppressLint
+import Authentication.NewAccount
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.try2.databinding.ActivitySplashBinding
 
 

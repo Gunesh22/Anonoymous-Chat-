@@ -7,15 +7,13 @@
         android:icon="@drawable/ic_chat" />
 
     <item
-        android:id="@+id/navAnonymousButton"
-        android:title="Anonymous"
-        android:icon="@drawable/ic_anonymous" />
+        android:id="@+id/navSearchButton"
+        android:title="Search"
+        android:icon="@drawable/ic_search"/>
+
     <item
         android:id="@+id/navProfileButton"
         android:title="Profile"
         android:icon="@drawable/ic_profile" />
-
-
-
 
 </menu>

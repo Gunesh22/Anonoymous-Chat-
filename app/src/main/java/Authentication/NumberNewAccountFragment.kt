@@ -1,4 +1,4 @@
-package com.example.try2
+package Authentication
 
 import android.os.Bundle
 import android.os.Handler
@@ -10,12 +10,12 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import com.example.try2.R
 import com.example.try2.databinding.FragmentNumberNewAccountBinding
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthOptions
 import com.google.firebase.auth.PhoneAuthProvider
-import com.hbb20.CountryCodePicker
 import java.util.concurrent.TimeUnit
 
 class NumberNewAccountFragment : Fragment() {

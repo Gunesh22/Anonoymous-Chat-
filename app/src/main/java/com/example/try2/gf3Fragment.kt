@@ -13,10 +13,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [UsernameNewAccountFragment.newInstance] factory method to
+ * Use the [gf3Fragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class UsernameNewAccountFragment : Fragment() {
+class gf3Fragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -34,7 +34,7 @@ class UsernameNewAccountFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_username_new_account, container, false)
+        return inflater.inflate(R.layout.fragment_gf3, container, false)
     }
 
     companion object {
@@ -44,12 +44,12 @@ class UsernameNewAccountFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment UsernameNewAccountFragment.
+         * @return A new instance of fragment gf3Fragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            UsernameNewAccountFragment().apply {
+            gf3Fragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

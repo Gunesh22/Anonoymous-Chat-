@@ -12,21 +12,24 @@
         android:label="fragment_splash_new_account"
         tools:layout="@layout/fragment_splash_new_account" >
         <action
-            android:id="@+id/action_splashNewAccountFragment_to_nameNewAccountFragment"
-            app:destination="@id/nameNewAccountFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/nameNewAccountFragment"
-        android:name="com.example.try2.NameNewAccountFragment"
-        android:label="fragment_name_new_account"
-        tools:layout="@layout/fragment_name_new_account" >
-        <action
-            android:id="@+id/action_nameNewAccountFragment_to_numberNewAccountFragment"
+            android:id="@+id/action_splashNewAccountFragment_to_numberNewAccountFragment"
             app:destination="@id/numberNewAccountFragment" />
     </fragment>
     <fragment
+        android:id="@+id/nameNewAccountFragment"
+        android:name="Authentication.NameNewAccountFragment"
+        android:label="fragment_name_new_account"
+        tools:layout="@layout/fragment_name_new_account" >
+        <action
+            android:id="@+id/action_nameNewAccountFragment_to_maleFemaleFragment"
+            app:destination="@id/maleFemaleFragment" />
+        <action
+            android:id="@+id/action_nameNewAccountFragment_to_profileFragment2"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
         android:id="@+id/numberNewAccountFragment"
-        android:name="com.example.try2.NumberNewAccountFragment"
+        android:name="Authentication.NumberNewAccountFragment"
         android:label="fragment_number_new_account"
         tools:layout="@layout/fragment_number_new_account" >
         <action
@@ -35,28 +38,63 @@
     </fragment>
     <fragment
         android:id="@+id/otpNewAccountFragment"
-        android:name="com.example.try2.OtpNewAccountFragment"
+        android:name="Authentication.OtpNewAccountFragment"
         android:label="fragment_otp_new_account"
         tools:layout="@layout/fragment_otp_new_account" >
         <action
             android:id="@+id/action_otpNewAccountFragment_to_numberNewAccountFragment"
             app:destination="@id/numberNewAccountFragment" />
         <action
-            android:id="@+id/action_otpNewAccountFragment_to_usernameNewAccountFragment"
-            app:destination="@id/usernameNewAccountFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/usernameNewAccountFragment"
-        android:name="com.example.try2.UsernameNewAccountFragment"
-        android:label="fragment_username_new_account"
-        tools:layout="@layout/fragment_username_new_account" >
-        <action
-            android:id="@+id/action_usernameNewAccountFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
+            android:id="@+id/action_otpNewAccountFragment_to_nameNewAccountFragment"
+            app:destination="@id/nameNewAccountFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.try2.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/maleFemaleFragment"
+        android:name="com.example.try2.MaleFemaleFragment"
+        android:label="fragment_male_female"
+        tools:layout="@layout/fragment_male_female" >
+        <action
+            android:id="@+id/action_maleFemaleFragment_to_usernameNewAccountFragment"
+            app:destination="@id/usernameNewAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/usernameNewAccountFragment"
+        android:name="Authentication.UsernameNewAccountFragment"
+        android:label="fragment_username_new_account"
+        tools:layout="@layout/fragment_username_new_account" >
+        <action
+            android:id="@+id/action_usernameNewAccountFragment_to_gf1Fragment"
+            app:destination="@id/gf1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gf1Fragment"
+        android:name="com.example.try2.Gf1Fragment"
+        android:label="Gf1Fragment" >
+        <action
+            android:id="@+id/action_gf1Fragment_to_gf2Fragment"
+            app:destination="@id/gf2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gf2Fragment"
+        android:name="com.example.try2.gf2Fragment"
+        android:label="fragment_gf2"
+        tools:layout="@layout/fragment_gf2" >
+        <action
+            android:id="@+id/action_gf2Fragment_to_gf3Fragment"
+            app:destination="@id/gf3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gf3Fragment"
+        android:name="com.example.try2.gf3Fragment"
+        android:label="fragment_gf3"
+        tools:layout="@layout/fragment_gf3" >
+        <action
+            android:id="@+id/action_gf3Fragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
 </navigation>

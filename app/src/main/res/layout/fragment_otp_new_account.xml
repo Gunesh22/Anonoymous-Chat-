@@ -6,7 +6,7 @@
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OtpNewAccountFragment">
+    tools:context="Authentication.OtpNewAccountFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,9 +32,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="50dp"
             android:gravity="center"
+            android:text="There is no autofill for this field Memorize OTP."
+            android:textAlignment="center"
             android:textSize="14sp"
             android:textStyle="bold" />
 
@@ -141,12 +143,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="didn_t_receive_the_otp"
+                android:text="Didn't receive the otp"
                 android:textSize="14sp"/>
 
             <TextView
@@ -154,25 +156,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="resend_otp"
+                android:text="Click on Change Phone Number I was too lazy to code ResendOTP function"
+                android:clickable="true"
+                android:textAlignment="center"
                 android:textStyle="bold"
                 android:textSize="15sp"/>
         </LinearLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            >
 
             <Button
                 android:id="@+id/buttonVerify"
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="30dp"
-
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="74dp"
                 android:text="Verify"
                 android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <ProgressBar
                 android:id="@+id/progressBar"
@@ -181,6 +187,15 @@
                 android:layout_gravity="center"
                 android:visibility="gone"/>
         </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Phone Number"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:id="@+id/changePhoneNumber"
+            />
 
 
     </LinearLayout>

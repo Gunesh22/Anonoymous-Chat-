@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bubble_background_incoming">#EEEEEE</color> <!-- Light Grey for incoming messages -->
+    <color name="bubble_background_outgoing">#4CAF50</color> <!-- Green for outgoing messages -->
+    <color name="bubble_text_color">#000000</color> <!-- Black for text -->
 </resources>

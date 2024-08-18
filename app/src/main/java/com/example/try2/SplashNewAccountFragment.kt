@@ -26,7 +26,7 @@ class SplashNewAccountFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         navController = findNavController()
         binding.NewAccountSplashButtonGetStarted.setOnClickListener {
-            navController.navigate(R.id.action_splashNewAccountFragment_to_nameNewAccountFragment)
+            navController.navigate(R.id.action_splashNewAccountFragment_to_numberNewAccountFragment)
         }
     }
 
